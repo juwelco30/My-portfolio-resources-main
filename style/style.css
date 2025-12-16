@@ -54,6 +54,9 @@ nav{
     justify-content: space-between;
     margin: 50px 200px;
 }
+.name{
+    font-size: 2em;
+}
 .nav-title{
     font-weight: 800;
     font-size: 45px;
@@ -99,7 +102,7 @@ main section{
     margin-bottom: 130px;
 }
 /* about style */
-about{
+.about{
     border-radius: 10px;
     padding: 130px 150px;
     text-align: center;
@@ -173,4 +176,44 @@ input[type="text"], footer input[type="email"], footer textarea{
     padding: 10px 20px;
     margin-bottom: 24px;
     border: none;
+}
+
+
+/* responsive style */
+@media screen and (max-width:576px){
+    nav{
+        /* flex-direction: column; */
+        margin: 30px 20px;
+        gap: 20px;
+    }
+    nav ul{
+        /* flex-direction: column; */
+        margin-top: 20px;
+        gap: 15px;
+    }
+    .banner{
+        flex-direction: column;
+        align-items: center;
+        margin: 0 20px;
+        /* text-align: center; */
+    }
+    .banner-content{
+        width: 100%;
+    }
+    .about-items{
+        /* flex-direction: column; */
+        gap: 30px;
+        /* align-items: center; */
+    }
+    .skills-container{
+        flex-direction: column;
+    }
+    .resume-container{
+        flex-direction: column;
+    }
+    .footer{
+        flex-direction: column;
+        padding: 50px 20px;
+    }
+    
 }
